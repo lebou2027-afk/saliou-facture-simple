@@ -832,5 +832,10 @@ function stampsHtml(){
  importLink();renderCo();render();renderStSettings();renderPick();route();
 })();
 </script>
+ <script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
 </body>
 </html>
